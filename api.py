@@ -1,6 +1,6 @@
 from github_webhook import Webhook
 from flask import Flask
-from webhook_processor import processor
+from webhook_processor.processor import Processor
 
 app = Flask(__name__)  # Standard Flask app
 webhook = Webhook(app) # Defines '/postreceive' endpoint
